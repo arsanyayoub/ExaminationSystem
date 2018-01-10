@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="StudentExam.exe" version="1.0.0.11" publicKeyToken="0000000000000000" language="ar-EG" processorArchitecture="x86" type="win32" />
-  <description asmv2:iconFile="1420826158_45013.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <asmv1:assemblyIdentity name="StudentExam.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="ar-EG" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="1473391166_books.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="StudentExam" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
@@ -134,7 +134,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yMOE6AMRgj4mNLyek+s3gmLuzWs=</dsig:DigestValue>
+        <dsig:DigestValue>cfoAVnPuMxVhVquq7KKDaBvBd/g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -283,14 +283,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentExam.exe" size="2086400">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentExam.exe" size="2148864">
       <assemblyIdentity name="StudentExam" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>L7IpBfJZOMG6jWtFztNRFvBAllk=</dsig:DigestValue>
+        <dsig:DigestValue>VRj8ydErjpOLArCsXOxYn3kOLLI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -387,13 +387,31 @@
       <dsig:DigestValue>ahYUkvLVYo17J60wLs1nUR/IN4M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="bin\Debug\Errors.txt" size="16972">
+  <file name="1473391166_books.ico" size="164538">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>NAc5DOGbiPwcX7RBQry06NMZ/nw=</dsig:DigestValue>
+      <dsig:DigestValue>aGDKSpptxIDuhlJhfNdcX2MSDCU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bin\Debug\Errors.txt" size="21861">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Jxgblx2zFIrFPT5AmUX6KJClZlQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StudentExam.exe.config" size="432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qrSCPPo1/Jw2i9vB22/QCuvmyqw=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

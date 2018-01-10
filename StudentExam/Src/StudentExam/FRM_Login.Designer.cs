@@ -33,7 +33,7 @@
             this.LBL_Password = new Telerik.WinControls.UI.RadLabel();
             this.LBL_UserName = new Telerik.WinControls.UI.RadLabel();
             this.TXT_Password = new Telerik.WinControls.UI.RadTextBox();
-            this.TXT_UserName = new Telerik.WinControls.UI.RadTextBox();
+            this.TXT_UserName1 = new Telerik.WinControls.UI.RadTextBox();
             this.PNL_Status = new Telerik.WinControls.UI.RadPanel();
             this.STS_Login = new Telerik.WinControls.UI.RadStatusStrip();
             this.BTN_Cancel = new Telerik.WinControls.UI.RadButtonElement();
@@ -42,24 +42,35 @@
             this.office2010SilverTheme1 = new Telerik.WinControls.Themes.Office2010SilverTheme();
             this.office2010BlackTheme1 = new Telerik.WinControls.Themes.Office2010BlackTheme();
             this.Timer_MSgCleaner = new System.Windows.Forms.Timer(this.components);
+            this.TXT_UserName = new Telerik.WinControls.UI.RadDropDownList();
+            this.studentExamDataSet = new StudentExam.StudentExamDataSet();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userTableAdapter = new StudentExam.StudentExamDataSetTableAdapters.UserTableAdapter();
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PNL_Main)).BeginInit();
             this.PNL_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LBL_Password)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LBL_UserName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_Password)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXT_UserName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_UserName1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PNL_Status)).BeginInit();
             this.PNL_Status.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Login)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_UserName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentExamDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // PNL_Main
             // 
+            this.PNL_Main.Controls.Add(this.radLabel1);
+            this.PNL_Main.Controls.Add(this.TXT_UserName);
             this.PNL_Main.Controls.Add(this.LBL_Password);
             this.PNL_Main.Controls.Add(this.LBL_UserName);
             this.PNL_Main.Controls.Add(this.TXT_Password);
-            this.PNL_Main.Controls.Add(this.TXT_UserName);
+            this.PNL_Main.Controls.Add(this.TXT_UserName1);
             this.PNL_Main.Controls.Add(this.PNL_Status);
             this.PNL_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PNL_Main.Location = new System.Drawing.Point(0, 0);
@@ -86,6 +97,7 @@
             this.LBL_UserName.Size = new System.Drawing.Size(86, 23);
             this.LBL_UserName.TabIndex = 3;
             this.LBL_UserName.Text = "اسم المستخدم";
+            this.LBL_UserName.Visible = false;
             // 
             // TXT_Password
             // 
@@ -99,16 +111,17 @@
             this.TXT_Password.TabStop = false;
             this.TXT_Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // TXT_UserName
+            // TXT_UserName1
             // 
-            this.TXT_UserName.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXT_UserName.Location = new System.Drawing.Point(24, 47);
-            this.TXT_UserName.Name = "TXT_UserName";
-            this.TXT_UserName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TXT_UserName.Size = new System.Drawing.Size(203, 24);
-            this.TXT_UserName.TabIndex = 0;
-            this.TXT_UserName.TabStop = false;
-            this.TXT_UserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TXT_UserName1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXT_UserName1.Location = new System.Drawing.Point(24, 47);
+            this.TXT_UserName1.Name = "TXT_UserName1";
+            this.TXT_UserName1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TXT_UserName1.Size = new System.Drawing.Size(203, 24);
+            this.TXT_UserName1.TabIndex = 0;
+            this.TXT_UserName1.TabStop = false;
+            this.TXT_UserName1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TXT_UserName1.Visible = false;
             // 
             // PNL_Status
             // 
@@ -178,6 +191,50 @@
             this.Timer_MSgCleaner.Interval = 5000;
             this.Timer_MSgCleaner.Tick += new System.EventHandler(this.Timer_MSgCleaner_Tick);
             // 
+            // TXT_UserName
+            // 
+            this.TXT_UserName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TXT_UserName.AutoCompleteDisplayMember = "UserName";
+            this.TXT_UserName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.TXT_UserName.AutoSize = false;
+            this.TXT_UserName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.userBindingSource, "UserName", true));
+            this.TXT_UserName.DataSource = this.userBindingSource;
+            this.TXT_UserName.DisplayMember = "UserName";
+            this.TXT_UserName.DropDownAnimationEnabled = true;
+            this.TXT_UserName.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.TXT_UserName.Location = new System.Drawing.Point(24, 12);
+            this.TXT_UserName.Name = "TXT_UserName";
+            this.TXT_UserName.ShowImageInEditorArea = true;
+            this.TXT_UserName.Size = new System.Drawing.Size(203, 29);
+            this.TXT_UserName.TabIndex = 4;
+            this.TXT_UserName.ThemeName = "Office2010Black";
+            // 
+            // studentExamDataSet
+            // 
+            this.studentExamDataSet.DataSetName = "StudentExamDataSet";
+            this.studentExamDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataMember = "User";
+            this.userBindingSource.DataSource = this.studentExamDataSet;
+            // 
+            // userTableAdapter
+            // 
+            this.userTableAdapter.ClearBeforeFill = true;
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radLabel1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel1.Location = new System.Drawing.Point(230, 9);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(86, 23);
+            this.radLabel1.TabIndex = 5;
+            this.radLabel1.Text = "اسم المستخدم";
+            // 
             // FRM_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,11 +261,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.LBL_Password)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LBL_UserName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_Password)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXT_UserName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_UserName1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PNL_Status)).EndInit();
             this.PNL_Status.ResumeLayout(false);
             this.PNL_Status.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.STS_Login)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXT_UserName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentExamDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -221,7 +282,7 @@
         private Telerik.WinControls.UI.RadLabel LBL_Password;
         private Telerik.WinControls.UI.RadLabel LBL_UserName;
         private Telerik.WinControls.UI.RadTextBox TXT_Password;
-        private Telerik.WinControls.UI.RadTextBox TXT_UserName;
+        private Telerik.WinControls.UI.RadTextBox TXT_UserName1;
         private Telerik.WinControls.UI.RadStatusStrip STS_Login;
         private Telerik.WinControls.UI.RadButtonElement BTN_Cancel;
         private Telerik.WinControls.UI.RadButtonElement BTN_Login;
@@ -229,5 +290,10 @@
         private Telerik.WinControls.Themes.Office2010SilverTheme office2010SilverTheme1;
         private Telerik.WinControls.Themes.Office2010BlackTheme office2010BlackTheme1;
         internal System.Windows.Forms.Timer Timer_MSgCleaner;
+        private Telerik.WinControls.UI.RadDropDownList TXT_UserName;
+        private StudentExamDataSet studentExamDataSet;
+        private System.Windows.Forms.BindingSource userBindingSource;
+        private StudentExamDataSetTableAdapters.UserTableAdapter userTableAdapter;
+        private Telerik.WinControls.UI.RadLabel radLabel1;
     }
 }

@@ -6,7 +6,30 @@ F:\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
 F:\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache
 D:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.dll
 D:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.pdb
-D:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\Microsoft.SqlServer.Replication.dll
 D:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.dll
 D:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
 D:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache
+E:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.dll
+E:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.pdb
+E:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.dll
+E:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
+E:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache
+I:\My Program Final\new\FINAL MSABKA\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.dll
+I:\My Program Final\new\FINAL MSABKA\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.pdb
+I:\My Program Final\new\FINAL MSABKA\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache
+I:\My Program Final\new\FINAL MSABKA\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.dll
+I:\My Program Final\new\FINAL MSABKA\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
+C:\Users\Maichael\Desktop\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Maichael\Desktop\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.dll
+C:\Users\Maichael\Desktop\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
+C:\Users\Maichael\Desktop\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.dll
+C:\Users\Maichael\Desktop\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.pdb
+E:\Mosab2a 2017\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.dll
+E:\Mosab2a 2017\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.pdb
+E:\Mosab2a 2017\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.dll
+E:\Mosab2a 2017\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
+D:\StudentExam\Application\StudentExam\Src\MainLibrary\bin\x86\Debug\MainLibrary.dll
+D:\StudentExam\Application\StudentExam\Src\MainLibrary\bin\x86\Debug\MainLibrary.pdb
+D:\StudentExam\Application\StudentExam\Src\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache
+D:\StudentExam\Application\StudentExam\Src\MainLibrary\obj\x86\Debug\MainLibrary.dll
+D:\StudentExam\Application\StudentExam\Src\MainLibrary\obj\x86\Debug\MainLibrary.pdb

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentExam", "StudentExam\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLibrary", "MainLibrary\MainLibrary.csproj", "{0CD0C599-67DF-4AF7-B8FD-25837679BCF4}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "StudentExamSetup", "StudentExamSetup\StudentExamSetup.vdproj", "{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,18 @@ Global
 		{0CD0C599-67DF-4AF7-B8FD-25837679BCF4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{0CD0C599-67DF-4AF7-B8FD-25837679BCF4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{0CD0C599-67DF-4AF7-B8FD-25837679BCF4}.Release|x86.ActiveCfg = Release|Any CPU
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Debug|Any CPU.ActiveCfg = Debug
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Debug|Any CPU.Build.0 = Debug
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Debug|Mixed Platforms.Build.0 = Debug
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Debug|x86.ActiveCfg = Debug
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Debug|x86.Build.0 = Debug
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Release|Any CPU.ActiveCfg = Release
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Release|Any CPU.Build.0 = Release
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Release|Mixed Platforms.ActiveCfg = Release
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Release|Mixed Platforms.Build.0 = Release
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Release|x86.ActiveCfg = Release
+		{07047D49-B8D7-4ABD-8F5F-8521C30F9CDA}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

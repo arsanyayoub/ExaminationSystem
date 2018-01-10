@@ -27,7 +27,7 @@ namespace StudentExam
         public TimeSpan VoteTime;
         public int QuestionIndex = 0;
         private void sSave()
-        {
+         {
             BasicClass.vSqlConn = new SqlConnection(BasicClass.vConectionString);
             try
             {
@@ -77,15 +77,23 @@ namespace StudentExam
                     vAnswer = 4;
                 }
 
-                vQuestionStatment = "INSERT INTO [Student_Answers]																		" + "\n" +
-                                    "           ([STD_ID]          ,  [QST_ID]     ,[Answer]     ,[Grade]     ,[Lastupdate],             [ProcessID]                     ,                     [MachineName]             ,    [USR_ID]   )	" + "\n" +
-                                    "     VALUES(" + vSTD_ID + "  ," + vQST_ID + ","+vAnswer+"  ,"+ vGrade +" ,GETDATE()  ,'" + Process.GetCurrentProcess().Id + "'  ,'" + System.Environment.MachineName.Trim() + "'  ," + vSTD_ID + ")		" + "\n";
-                vQuestionStatment += "UPDATE [User]										" + "\n" +
-                                    "   SET [IsExamTaken] = 'Y'							" + "\n" +
-                                    "      ,[Lastupdate]  = GETDATE()					" + "\n" +
-                                    "      ,[ProcessID]   = '" + Process.GetCurrentProcess().Id + "' " + "\n" +
-                                    "      ,[MachineName] = '" + System.Environment.MachineName.Trim() + "'" + "\n" +
-                                    "  WHERE ID =" + vSTD_ID + "\n";
+                vQuestionStatment = "UPDATE [dbo].[Student_Answers]						                                    " + "\n" +
+                                    "   SET [Answer] 			= " + vAnswer + "					                            " + "\n" +
+                                    "      ,[Grade]  			= " + vGrade + "						                        " + "\n" +
+                                    "      ,[Lastupdate] 		= GETDATE() 				                                    " + "\n" +
+                                    "      ,[ProcessID]			= '" + Process.GetCurrentProcess().Id + "'					    " + "\n" +
+                                    "      ,[MachineName] 		= '" + System.Environment.MachineName.Trim() + "'				" + "\n" +
+                                    "      ,[USR_ID]		 	= " + vSTD_ID + "		                                        " + "\n" +
+                                    "      ,[IsQuestionAnswered] = 'Y'						                                    " + "\n" +
+                                    " WHERE [STD_ID] =	" + vSTD_ID + " 					                                    " + "\n" +
+                                    " AND   [QST_ID] = 	" + vQST_ID + "						                                    " + "\n";
+
+
+                //////vQuestionStatment = "INSERT INTO [Student_Answers]																		" + "\n" +
+                //////                    "           ([STD_ID]          ,  [QST_ID]     ,[Answer]     ,[Grade]     ,[Lastupdate],             [ProcessID]                     ,                     [MachineName]             ,    [USR_ID]   )	" + "\n" +
+                //////                    "     VALUES(" + vSTD_ID + "  ," + vQST_ID + ","+vAnswer+"  ,"+ vGrade +" ,GETDATE()  ,'" + Process.GetCurrentProcess().Id + "'  ,'" + System.Environment.MachineName.Trim() + "'  ," + vSTD_ID + ")		" + "\n";
+                
+               
                 Int64 saved = BasicClass.fDMLData(vQuestionStatment, this.Name);
             }
             catch (Exception ex)
@@ -111,13 +119,20 @@ namespace StudentExam
         {
             try
             {
+                int vSTD_ID = BasicClass.vUsrID;
                 string vStdGradesStatment = "";
                 vStdGradesStatment = "INSERT INTO [StudentExam].[dbo].[Student_Grades]																" + "\n" +
                                         "           ([TValue],			[Desca]				,[TDate],[STD_ID],[Lastupdate],[ProcessID],[MachineName])	" + "\n" +
                                         " SELECT     SUM(Grade) , 'اجمالى مجموع درجات الطالب',GETDATE(),STD_ID ,GETDATE()   ,   '"+Process.GetCurrentProcess().Id +"'      ,'"+ System.Environment.MachineName +"'" + "\n" +
                                         " FROM		Student_Answers																						" + "\n" +
-                                        " WHERE		STD_ID = 11																							" + "\n" +
+                                        " WHERE		STD_ID = " + BasicClass.vUsrID + "																						" + "\n" +
                                         " GROUP BY	STD_ID																								";
+                vStdGradesStatment += "UPDATE [User]										" + "\n" +
+                                   "   SET [IsExamTaken] = 'Y'							" + "\n" +
+                                   "      ,[Lastupdate]  = GETDATE()					" + "\n" +
+                                   "      ,[ProcessID]   = '" + Process.GetCurrentProcess().Id + "' " + "\n" +
+                                   "      ,[MachineName] = '" + System.Environment.MachineName.Trim() + "'" + "\n" +
+                                   "  WHERE ID =" + vSTD_ID + "\n";
                 Int64 saved = BasicClass.fDMLData(vStdGradesStatment, this.Name);
             }
             catch (Exception ex)
@@ -135,7 +150,6 @@ namespace StudentExam
 
         private void sFillSqlStatmentArray(string pStatment)
         {
-            //FK 16/4/2005
             //here I fill the Array to send it to transaction
             if (string.IsNullOrEmpty(vSqlStatment[Information.UBound(vSqlStatment)]))
             {
@@ -273,11 +287,18 @@ namespace StudentExam
                sFillQuestionList();
                sGetNextQuestion(QuestionIndex);
 
+               int vQuestionCount = questionsList.Count;
+                decimal remTime =  decimal.Parse( (vQuestionCount * 0.5).ToString());
+                int var = (int) remTime;
+                int minutes = var;
+                int seconds = (int)((remTime - minutes)*  60);
                LBL_QuestionTime.Text = "30";
+               LBL_ExamRemainingTime.Text = "00" +":" + minutes + ":" + seconds;
+
                TMR_Question.Start();
                Timer_ExamTime.Enabled = true;
                Timer_ExamTime.Start();
-               VoteTime = new TimeSpan(0, 1, 0, 0);
+               VoteTime = new TimeSpan(0, 0, minutes,seconds);
             }
             catch (Exception ex)
             {
@@ -294,8 +315,25 @@ namespace StudentExam
                 // Here i open connection to databse and execute command to get roles to fill dropdown list
                 SqlDataReader vSQLReader;
                 vSqlCommand.Connection = sqlConnection1;
-                vSqlCommand.CommandText = "\n" +
-                                   "EXEC	 [dbo].[GenerateExamNew]";
+
+                int vSTD_ID = BasicClass.vUsrID;
+                string vStdAnswers =   "FROM		Student_Answers		" + "\n" +
+                                        "WHERE		STD_ID = "+ vSTD_ID + "		" + "\n" ;
+                int rowsCount = BasicClass.fCount_Rec(vStdAnswers);
+                if (rowsCount> 0)
+                {
+                    // HERE I GET REMAINING STUDENT QUESTIONS
+                    vSqlCommand.CommandText = "\n" +
+                               "EXEC	 [dbo].[GenerateRemainingStudentQuestions]  " + vSTD_ID + " ";
+                }
+                else
+                {
+                    // HERE I GET RANDOM 105  STUDENT QUESTIONS
+                       vSqlCommand.CommandText = "\n" +
+                                                   "EXEC	 [dbo].[GenerateExamNew]  " + vSTD_ID + " ";
+
+                }
+                
                 sqlConnection1.Open();
                 vSQLReader = vSqlCommand.ExecuteReader();
                 while (vSQLReader.Read())
@@ -439,7 +477,7 @@ namespace StudentExam
                         string vQno = "";
                         //if (index == 0)
                         //{
-                            vQno = (index + 1).ToString();
+                        vQno = questionsList[index].vRow.ToString();
                         //}
                         //else
                         //{

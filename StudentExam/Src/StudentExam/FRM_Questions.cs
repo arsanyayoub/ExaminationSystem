@@ -142,7 +142,6 @@ namespace StudentExam
 
         private void sFillSqlStatmentArray(string pStatment)
         {
-            //FK 16/4/2005
             //here I fill the Array to send it to transaction
             if (string.IsNullOrEmpty(vSqlStatment[Information.UBound(vSqlStatment)]))
             {

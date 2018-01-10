@@ -20,6 +20,8 @@ namespace StudentExam
 
         private void FRM_Login_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'studentExamDataSet.User' table. You can move, or remove it, as needed.
+            this.userTableAdapter.Fill(this.studentExamDataSet.User);
             TXT_UserName.Select();
             FRM_Login frmLogin = new FRM_Login();
             FRM_Main frmMain = new FRM_Main();
@@ -47,7 +49,7 @@ namespace StudentExam
                 if (TXT_UserName.Text.ToString() =="")
                 {
                     STS_Login.Items["Msg"].Text = "من فضلك ادخل اسم المستخدم";
-                    TXT_UserName.SelectAll();
+                    TXT_UserName.SelectAllText();
                     Timer_MSgCleaner.Start();
                 }
                 else
@@ -56,7 +58,7 @@ namespace StudentExam
                     if (BasicClass.vUsrID ==0)
                     {
                           STS_Login.Items["Msg"].Text = "اسم المستخدم / كلمة المرور غير صحيح";
-                            TXT_UserName.SelectAll();
+                            TXT_UserName.SelectAllText();
 
                     }
                     else

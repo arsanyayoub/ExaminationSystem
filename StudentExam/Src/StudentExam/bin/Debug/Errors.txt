@@ -391,8 +391,85 @@ Parameter name: key
 ============================================================================
 
 
-9/8/2016  =  4:41 PM
+9/8/2016  =  3:30 PM
 	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
 	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
 		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
+
+
+9/8/2016  =  3:39 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
+
+
+9/8/2016  =  3:41 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
+
+
+9/8/2016  =  3:57 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: BTN_Login_Click
+		The Error Is Keyword not supported: 'driver'.
+============================================================================
+
+
+9/8/2016  =  4:01 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
+
+
+9/8/2016  =  4:05 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
+
+
+9/8/2016  =  4:19 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
+
+
+9/2/2017  =  12:47 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+============================================================================
+
+
+9/2/2017  =  12:47 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: BTN_Login_Click
+		The Error Is Selecting all items is not a valid operation in the current selection mode. SelectionMode = One.
+============================================================================
+
+
+9/2/2017  =  12:50 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: BTN_Login_Click
+		The Error Is Selecting all items is not a valid operation in the current selection mode. SelectionMode = One.
+============================================================================
+
+
+9/2/2017  =  6:27 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillBooks
+		The Error Is Could not find stored procedure 'dbo.GenerateRemainingStudentQuestion'.
+============================================================================
+
+
+9/2/2017  =  7:11 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: FRM_Exam_Load
+		The Error Is Input string was not in a correct format.
 ============================================================================

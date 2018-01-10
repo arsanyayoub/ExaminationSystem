@@ -16,8 +16,12 @@ using Microsoft.SqlServer.Management.Smo;
 using MainLibrary;
 public class BasicClass
 {
-    //public static string vConectionString = "Data Source=EIME00/EIMESRV;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd";
-    public static string vConectionString ="data source=EIME00\\EIMESRV;initial catalog=StudentExam;user id=sa ;password=EimeP@$$w0rd;Connect Timeout=15";
+
+   public static string vConectionString = "Data Source=.;Initial Catalog=StudentExam;Persist Security Info=True;User ID=sa;Password=P@$$w0rdMeedos4";
+
+    //public static string vConectionString ="Data Source=EimeCinter\\EimeSRV;Initial Catalog=StudentExam;User Id=sa;Password=P@$$w0rd2017;";
+
+    // public static string vConectionString = "Data Source=192.168.1.47,1433;Network Library=DBMSSOCN;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd;";
 	public bool vSuccess;
     //For collecting SQL statements to send themm as a transaction
     #region "Variables Declaration                                                                           "
@@ -40,8 +44,8 @@ public class BasicClass
             //vDecryptedText = vRegVer.GetValue(pRegKey);
             //vConectionString = sDecrypt(vDecryptedText);
 
-            vConectionString = "Data Source=EIME00\\EIMESRV;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd";
-
+            //vConectionString = "Data Source=EIME00/EIMESRV;Initial Catalog=StudentExam;User ID=sa;Password=EimeP@$$w0rd";
+            vConectionString = "Data Source=.;Initial Catalog=StudentExam;User ID=sa;Password=P@$$w0rdMeedos4";
 			System.Data.SqlClient.SqlConnection vSqlConnection = new System.Data.SqlClient.SqlConnection(vConectionString);
 			Microsoft.SqlServer.Management.Common.ServerConnection vConn = new Microsoft.SqlServer.Management.Common.ServerConnection(vSqlConnection);
 			vConn.Connect();
@@ -52,9 +56,7 @@ public class BasicClass
 		}
 	}
 	#endregion
-	#region " Initialize  Sql Connection                                                                    "
-	//FK 13/4/2005
-	//Here I Intialize sql connection that I'll use it in program
+	#region "Sql Connection                                                                    "
 	public static SqlConnection vSqlConn;
 
 	public BasicClass(string pRegKey)
@@ -65,14 +67,9 @@ public class BasicClass
 		}
 		vSqlConn = new SqlConnection(vConectionString);
 
-		//Dim vConfig_rd As New Configuration.AppSettingsReader
-		//vSqlConn = New SqlConnection(vConfig_rd.GetValue("ConnectionString", GetType(String)))
-
-	}
+		}
 	#endregion
 	#region " Create Global Server Sql Connection                                                           "
-	//NG 18-1-2009
-	//Here I Intialize sql connection for master server transaction
 	public static bool fTestGlobalConenction(string pConnStr)
 	{
 
@@ -110,11 +107,9 @@ public class BasicClass
 	}
 	#endregion
 	#region " Making DML Command                                                                            "
-	//FK 13/4/2005
 	//Here I'm making functions that executing DML command on System.Database
 	public static long fDMLData(string pSqlStatment, string pFormName)
 	{
-		//FK 13/4/2005
 		//In this function I execute only one command.
 		SqlTransaction vTrans = default(SqlTransaction);
 		try {
@@ -153,7 +148,6 @@ public class BasicClass
 	public static long fDMLData(string[] pSqlStatment, string pFormName)
 	{
 		long functionReturnValue = 0;
-		//FK 13/4/2005
 		//In this Function I execute a group of commands and sure that all command
 		//are executed without errors by using transactions
 		long vNoOfRowsAffected = 0;
@@ -209,7 +203,6 @@ public class BasicClass
 	}
 	public static long fDMLData(Hashtable pSqlStatmentHashtable, string pFormName)
 	{
-		//BF 08-04-2008
 		//This function executes the received hashtable of sql statements and executes its items one by one
 		//This function is specific for GLI...
 		long vNoOfRowsAffected = 0;
@@ -263,7 +256,7 @@ public class BasicClass
 	}
 	public static string fReturnScalar(string pSqlStatment, string pFormName)
 	{
-		//FK 26/4/2005
+		
 		//In this function I execute only one command and return single value.
 		try {
 			SqlCommand vSqlCommand = new SqlCommand(pSqlStatment, vSqlConn);
@@ -293,7 +286,7 @@ public class BasicClass
 	}
 	public static string fReturnNonQuery(string pSqlStatment, string pFormName)
 	{
-		//FK 26/4/2005
+		
 		//In this function I execute only one command and return single value.
 		try {
 			SqlCommand vSqlCommand = new SqlCommand(pSqlStatment, vSqlConn);
@@ -399,7 +392,6 @@ public class BasicClass
 	#region " Get Server DateTime                                                                           "
 	public static DateTime fGetCurDateTime()
 	{
-		//JN 18-05-2005
 		//Function To Get Current DateTime From DB Server
 		DateTime vCurDateTime = default(DateTime);
 		BasicClass vcBase = new BasicClass("XSSES");
@@ -429,7 +421,6 @@ public class BasicClass
 	#region " Lock Record                                                                                   "
 	public static void sLockRecord(string pTableName, string pWhereClause, string pLockMode)
 	{
-		//fk 26/5/2005
 		//I check for lock record
 		try {
 			System.Data.SqlClient.SqlCommand vSqlCommand = new System.Data.SqlClient.SqlCommand();
@@ -532,17 +523,15 @@ public class BasicClass
     }
     #endregion
 	#region " Collect Statments                                                                             "
-	// TD 24-09-2008
 	// handels statments arrays
 	public static void sEmptySqlStatmentArray()
 	{
-		//TD 24-09-2008
 		//This sub empty the SQL statements array
 		vSqlStatment = new string[1];
 	}
 	public static void sFillSqlStatmentArray(string pStatment)
 	{
-		//TD 24-09-2008
+		
 		//This sub fill the Array to send it to transaction
 		if (string.IsNullOrEmpty(vSqlStatment[vSqlStatment.GetUpperBound(0)])) {
 			vSqlStatment[vSqlStatment.GetUpperBound(1)] = pStatment;
@@ -553,76 +542,4 @@ public class BasicClass
 	}
 	#endregion
 
-    public static int fAttachImage(string pImageFileName, string pTableName, string pColumnName, string pWhereCluase, string pFormName)
-    {
-        //JN 13/4/2005
-        //In this Function I Attach an Image To Binary Column
-        int vNoOfRowsAffected = default(int);
-        SqlCommand vSqlCommand = default(SqlCommand);
-        SqlTransaction vTrans = default(SqlTransaction);
-        try
-        {
-            //Create Binary Object With Image 
-            System.IO.FileStream vBLOBFile = new System.IO.FileStream(pImageFileName, System.IO.FileMode.Open, System.IO.FileAccess.Read);
-            byte[] vBLOBData = new byte[vBLOBFile.Length];
-            vBLOBFile.Read(vBLOBData, 0, vBLOBData.Length);
-            vBLOBFile.Close();
-
-            vSqlConn.Open();
-
-            vTrans = vSqlConn.BeginTransaction(IsolationLevel.ReadCommitted);
-            vSqlCommand = new SqlCommand(" Update " + pTableName + " Set " + pColumnName + " = @BLOBData " + pWhereCluase, vSqlConn);
-
-            System.Data.SqlClient.SqlParameter vSqlParameter = new System.Data.SqlClient.SqlParameter("@BLOBData", SqlDbType.VarBinary, vBLOBData.Length, ParameterDirection.Input, false, 0, 0, null, DataRowVersion.Current, vBLOBData);
-            vSqlCommand.Parameters.Add(vSqlParameter);
-            vSqlCommand.Transaction = vTrans;
-            vNoOfRowsAffected = int.Parse(vNoOfRowsAffected.ToString()) + vSqlCommand.ExecuteNonQuery();
-            vTrans.Commit();
-            vSqlConn.Close();
-            return vNoOfRowsAffected;
-        }
-        catch (SqlException vex)
-        {
-            if (vex.Number == 547)
-            {
-                vTrans.Rollback();
-                vSqlConn.Close();
-                MessageBox.Show("خطأ فى حفظ البيانات", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
-            }
-            else
-            {
-                MessageBox.Show(vex.Message); 
-            }
-            return -1;
-        }
-        catch (Exception ex)
-        {
-            vTrans.Rollback();
-            vSqlConn.Close();
-            ExceptionHandler.HandleException(ex.Message, pFormName, "cbase.fAttachImage");
-            return 0;
-        }
-        finally
-        {
-            if (vSqlConn.State == ConnectionState.Open | vSqlConn.State == ConnectionState.Broken)
-            {
-                vSqlConn.Close();
-            }
-        }
     }
-
-    //=======================================================
-    //Service provided by Telerik (www.telerik.com)
-    //Conversion powered by NRefactory.
-    //Twitter: @telerik
-    //Facebook: facebook.com/telerik
-    //=======================================================
-
-}
-
-//=======================================================
-//Service provided by Telerik (www.telerik.com)
-//Conversion powered by NRefactory.
-//Twitter: @telerik
-//Facebook: facebook.com/telerik
-//=======================================================
