@@ -1,0 +1,50 @@
+
+private void sSavePerson()
+{
+	try {
+		string vIsWorking = "";
+		string vPersonStatment = null;
+		if (CHK_IsWorking.Checked == true) {
+			vIsWorking = "Y";
+		} else {
+			vIsWorking = "N";
+		}
+
+		if (vFormMode == "N") {
+			return;
+		} else if (vFormMode == "U") {
+			vPersonStatment = "  Update Person Set                                         " + "  Name                ='" + Strings.Trim(TXT_Name.Text) + "'                   " + " ,Phone                ='" + Strings.Trim(TXT_Phone.Text) + "'                   " + " ,JoinDate             ='" + Strings.Format(TXT_TDate.Value, "MM-dd-yyyy") + "'                   " + " ,Age             ='" + Strings.Trim(TXT_Age.Value) + "'                  " + " ,Education         = '" + Strings.Trim(TXT_Education.Text) + "'                               " + " ,E_Mail             ='" + Strings.Trim(TXT_Email.Text) + "' " + " ,Godfather              ='" + Strings.Trim(TXT_Godfather.Text) + "'                   " + " ,GF_Church              ='" + Strings.Trim(TXT_GF_Church.Text) + "'                   " + " ,City                 ='" + Strings.Trim(TXT_City.Text) + "'                      " + " ,Area                 ='" + Strings.Trim(TXT_Area.Text) + "'                      " + " ,Address              ='" + Strings.Trim(TXT_Address.Text) + "'                   " + " ,WorkPlace               ='" + Strings.Trim(TXT_WorkPlace.Text) + "'                     " + " ,IsWorking               ='" + Strings.Trim(vIsWorking) + "'                     " + " ,LastUpdate           = GetDate()                                         " + " , ProcessID           ='" + Strings.Trim(Process.GetCurrentProcess.Id) + "' " + " , MachineName         ='" + Strings.Trim(System.Environment.MachineName) + "' ";
+
+			vPersonStatment = vPersonStatment + " Where Org_Code    ='01' " + " And   Code        ='" + Strings.Trim(vPersonCode) + "'";
+		} else if (vFormMode == "I") {
+			string vIsActive = null;
+			string vIsSalesMan = null;
+			vPersonCode = Strings.Trim(fGetPersonCode("01", "01", "P"));
+			this.TXT_Name.Tag = Strings.Trim(vPersonCode);
+			vPersonStatment = "INSERT INTO [Person] " + "(          [ORG_Code]         ,       [Code]        ,                [Name]      ,                    [JoinDate]                  ,       [City]                    ,          [Area]                   ,                        [Address]      ,         [E_Mail]          ,    [IsActive]     ,        [Education]         , [LastUpdate],               ProcessID                ,                    MachineName              ,       Godfather                           ,               GF_Church           ,       IsWorking        ,          WorkPlace                    ,      Phone           )VALUES " + "(             '01'             ,'" + vPersonCode + "','" + Strings.Trim(TXT_Name.Text) + "','" + Strings.Format(TXT_TDate.Value, "MM-dd-yyyy") + "','" + Strings.Trim(this.TXT_City.Text) + "','" + Strings.Trim(this.TXT_Area.Text) + "','" + Strings.Trim(this.TXT_Address.Text) + "','" + this.TXT_Email.Text + "','Y','" + Strings.Trim(TXT_Education.Text) + "', getDate()   ,'" + Strings.Trim(Process.GetCurrentProcess.Id) + "','" + Strings.Trim(System.Environment.MachineName) + "','" + Strings.Trim(this.TXT_Godfather.Text) + "','" + Strings.Trim(this.TXT_GF_Church.Text) + "','" + Strings.Trim(vIsWorking) + "','" + Strings.Trim(this.TXT_WorkPlace.Text) + "','" + Strings.Trim(TXT_Phone.Text) + "') ";
+		}
+		this.sFillSqlStatmentArray(vPersonStatment);
+
+	} catch (Exception ex) {
+		Interaction.MsgBox(ex.Message);
+	} finally {
+		if (cMain.vSqlConn.State == ConnectionState.Open | cMain.vSqlConn.State == ConnectionState.Broken) {
+			cMain.vSqlConn.Close();
+		}
+	}
+}
+
+//=======================================================
+//Service provided by Telerik (www.telerik.com)
+//Conversion powered by NRefactory.
+//Twitter: @telerik
+//Facebook: facebook.com/telerik
+//=======================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+"SELECT [ID],[Code],[Name],[UserName],[RoleID]										" + "\n"+
+"      ,[Email],[Facebook],[YER_ID],[Address],[Education],[City] ,[Gender]" + "\n"+
+"      ,[IsInstructor],[Status],[Picture],[Age],[Type]" + "\n"+
+"  FROM [StudentExam].[dbo].[User]" + "\n"+
+"  WHERE Code =''" + "\n";

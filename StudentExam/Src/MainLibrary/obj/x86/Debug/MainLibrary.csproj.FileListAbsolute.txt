@@ -1,0 +1,12 @@
+F:\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.dll
+F:\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.pdb
+F:\Application\StudentExam\MainLibrary\bin\x86\Debug\Microsoft.SqlServer.Replication.dll
+F:\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.dll
+F:\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
+F:\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache
+D:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.dll
+D:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\MainLibrary.pdb
+D:\StudentExam\Application\StudentExam\MainLibrary\bin\x86\Debug\Microsoft.SqlServer.Replication.dll
+D:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.dll
+D:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.pdb
+D:\StudentExam\Application\StudentExam\MainLibrary\obj\x86\Debug\MainLibrary.csprojResolveAssemblyReference.cache

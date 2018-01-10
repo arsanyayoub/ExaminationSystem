@@ -1,0 +1,5 @@
+F:\Application\StudentExam\MainLibrary\bin\Debug\MainLibrary.dll
+F:\Application\StudentExam\MainLibrary\bin\Debug\MainLibrary.pdb
+F:\Application\StudentExam\MainLibrary\bin\Debug\Microsoft.SqlServer.Replication.dll
+F:\Application\StudentExam\MainLibrary\obj\Debug\MainLibrary.dll
+F:\Application\StudentExam\MainLibrary\obj\Debug\MainLibrary.pdb

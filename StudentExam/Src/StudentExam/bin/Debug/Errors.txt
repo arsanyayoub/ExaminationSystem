@@ -1,0 +1,398 @@
+﻿
+
+7/15/2016  =  11:33 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Form cannot be both an MDI child and MDI parent.
+Parameter name: value
+============================================================================
+
+
+7/15/2016  =  11:45 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Error creating window handle.
+============================================================================
+
+
+7/15/2016  =  11:48 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Error creating window handle.
+============================================================================
+
+
+7/16/2016  =  3:19 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Error creating window handle.
+============================================================================
+
+
+7/22/2016  =  9:35 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Form that is not a top-level form cannot be displayed as a modal dialog box. Remove the form from any parent form before calling showDialog.
+============================================================================
+
+
+7/22/2016  =  9:52 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Error creating window handle.
+============================================================================
+
+
+7/25/2016  =  3:37 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Form that is not a top-level form cannot be displayed as a modal dialog box. Remove the form from any parent form before calling showDialog.
+============================================================================
+
+
+7/30/2016  =  11:23 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: fGetStudentCode
+		The Error Is Incorrect syntax near 'Max'.
+============================================================================
+
+
+7/30/2016  =  11:23 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  11:23 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: fGetStudentCode
+		The Error Is Incorrect syntax near 'Max'.
+============================================================================
+
+
+7/30/2016  =  11:23 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  11:26 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: fGetStudentCode
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  11:26 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  11:27 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  12:44 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Application_ToolClick
+		The Error Is Filter string you provided is not valid. The filter string must contain a description of the filter, followed by the vertical bar (|) and the filter pattern. The strings for different filtering options must also be separated by the vertical bar. Example: "Text files (*.txt)|*.txt|All files (*.*)|*.*"
+============================================================================
+
+
+7/30/2016  =  12:46 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  12:46 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  1:02 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: fSaveData
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:07 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:21 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:25 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:27 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:30 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:46 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:46 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+7/30/2016  =  2:48 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: New
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/2/2016  =  12:54 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetMinCode
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/2/2016  =  12:54 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Input string was not in a correct format.
+============================================================================
+
+
+8/2/2016  =  12:56 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetMinCode
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/2/2016  =  12:57 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Input string was not in a correct format.
+============================================================================
+
+
+8/2/2016  =  12:59 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetMinCode
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/2/2016  =  12:59 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Input string was not in a correct format.
+============================================================================
+
+
+8/4/2016  =  2:39 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Incorrect syntax near the keyword 'WHERE'.
+============================================================================
+
+
+8/4/2016  =  2:40 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Incorrect syntax near the keyword 'WHERE'.
+============================================================================
+
+
+8/4/2016  =  2:45 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/4/2016  =  2:45 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/4/2016  =  2:46 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/4/2016  =  2:48 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/9/2016  =  10:35 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Main
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sEnableTool
+		The Error Is Key not found
+Parameter name: key
+============================================================================
+
+
+8/9/2016  =  10:39 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Questions
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Invalid column name 'Email'.
+Invalid column name 'Facebook'.
+Invalid column name 'YER_ID'.
+Invalid column name 'Address'.
+Invalid column name 'Education'.
+Invalid column name 'City'.
+Invalid column name 'Gender'.
+Invalid column name 'IsInstructor'.
+Invalid column name 'Status'.
+Invalid column name 'Picture'.
+Invalid column name 'Age'.
+Invalid column name 'Type'.
+============================================================================
+
+
+8/20/2016  =  12:10 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetNextQuestion
+		The Error Is Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+============================================================================
+
+
+8/20/2016  =  12:22 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetNextQuestion
+		The Error Is Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+============================================================================
+
+
+8/20/2016  =  10:15 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetNextQuestion
+		The Error Is Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+============================================================================
+
+
+8/21/2016  =  12:23 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetNextQuestion
+		The Error Is Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+============================================================================
+
+
+8/23/2016  =  11:15 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetNextQuestion
+		The Error Is Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+============================================================================
+
+
+8/23/2016  =  11:50 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Exam
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sGetNextQuestion
+		The Error Is Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+============================================================================
+
+
+8/26/2016  =  2:38 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: Frm_BOOKS
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Invalid column name 'Name'.
+============================================================================
+
+
+8/26/2016  =  2:38 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: Frm_BOOKS
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is Invalid column name 'Name'.
+============================================================================
+
+
+8/26/2016  =  2:45 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+8/26/2016  =  3:00 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: Toolbar_Options_ToolClick
+		The Error Is Object reference not set to an instance of an object.
+============================================================================
+
+
+9/1/2016  =  3:25 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: TXT_FindByCode_Enter
+		The Error Is The multi-part identifier "User.ID" could not be bound.
+============================================================================
+
+
+9/1/2016  =  4:41 AM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Students
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sEnableTool
+		The Error Is Key not found
+Parameter name: key
+============================================================================
+
+
+9/7/2016  =  12:14 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
+
+
+9/8/2016  =  4:41 PM
+	THE FORM NAME THAT HAS OCCURED THE ERROR: FRM_Login
+	THE SUB NAME THAT HAS OCCURED THE ERROR: sFillUserdata
+		The Error Is A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+============================================================================
